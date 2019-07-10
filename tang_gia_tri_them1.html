@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tang gia tri them 1</title>
+</head>
+<body>
+<input id="input" />
+<button onclick="tang1()">tang 1</button>
+<p><span id="display"></span> </p>
+</body>
+<script>
+    function tang1() {
+        let input = Number(document.getElementById('input').value);
+        input+=1;
+        document.getElementById('display').innerHTML = input;
+    };
+</script>
+</html>

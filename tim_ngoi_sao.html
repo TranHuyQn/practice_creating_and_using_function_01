@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim ngoi sao</title>
+</head>
+<body>
+<button onclick="timChomSao()">Tim chom sao cua ngoi sao</button>
+<script>
+    function timChomSao(){
+        let tenChomSao = "";
+        let tenNgoiSao = prompt('nhap ten ngoi sao');
+        let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (tenNgoiSao == ngoiSao[i]) {
+                tenChomSao = chomSao[i];
+            }
+        }
+        if (tenChomSao != ""){
+            alert(tenChomSao);
+        } else {
+            alert('khong tim thay');
+        }
+    }
+
+
+</script>
+</body>
+</html>
